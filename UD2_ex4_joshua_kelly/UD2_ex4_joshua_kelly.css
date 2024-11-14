@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #d3d0cb;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+img {
+    height: 150px;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: #1e2019;
+    color: #d3d0cb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header ul > li{
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: #1e2019;
+    margin: 0, 10px, 0, 10px;
+    padding: 20px;
+}
+header a:hover {
+    font-weight: bold;
+}
+
+h1, h3, p {
+    padding: 10px;
+}
+
+form {
+    border: 1px solid #d3d0cb;
+    border-radius: 10px;
+    width: 50%;
+    display: inline-block;
+}
+
+form a {
+    color: #d3d0cb;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 0.5px solid #E2C044;
+    outline: 1px solid #E2C044;
+    border-radius: 2px;
+}
+
+input[type="radio"], input[type="checkbox"]  {
+    accent-color: #587b7f;
+}
+
+textarea {
+    text-align: left;
+}
+
+input[type="submit"] {
+    background-color: #E2C044;
+    color:  #1e2019;
+    width: 80px;
+    height: 35px;
+    border-color:#d3d0cb;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #e2c044d8;
+}
