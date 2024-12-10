@@ -1,0 +1,59 @@
+:root {
+    --purple: #6d597a;
+    --red: #b56576;
+    --orange: #eaac8b;
+    --black: #000;
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header, footer {
+    background-color: var(--purple);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+main {
+    height: 500px;
+    display: flex;
+    gap: 25px;
+}
+
+aside {
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    padding: 10px;
+}
+
+aside a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+section {
+    width: 80%;
+    color: var(--black);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    height: 100px;
+}
