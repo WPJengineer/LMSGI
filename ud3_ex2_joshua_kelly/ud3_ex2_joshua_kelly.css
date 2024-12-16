@@ -1,0 +1,254 @@
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-Black: hsl(0, 0%, 8%);
+}
+  
+@font-face {
+    font-family: "Epilogue";
+    src: url(./fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue";
+    list-style-type: none;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--almost-white);
+    color: var(--almost-Black);
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#btn-menu {
+    height: 20px;
+}
+
+header nav {
+    display: none;
+}
+
+
+
+/* .front {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.front>ul {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+#btn-close {
+    display: none;
+}
+
+#arrow-up-1, #arrow-up-2 {
+    display: none;
+}
+
+#btn-features, #btn-company, .btn-login {
+    border: none;
+    background-color: var(--almost-white);
+}
+
+.ul-submenu {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 5px 0;
+    border: 1px solid var(--almost-black);
+}
+
+.ul-submenu li {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.btn-register {
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--almost-white);
+} */
+
+
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+main picture img{
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+section p {
+    color: var(--medium-gray);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+main section button {
+    background-color: var(--almost-Black);
+    color: var(--almost-white);
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 1em;
+    border: none;
+    width: 150px;
+}
+
+main section button:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-Black);
+    border: 1px solid var(--almost-Black);
+}
+
+main section div {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        gap: 60px;
+        align-items: center;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    #btn-close {
+        display: none;
+    }
+
+    #nav-menu {
+        display: initial;
+        width: 99%;
+    }
+
+    .front {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .front ul {
+        display: flex;
+        gap: 0 30px;
+    }
+
+    .front ul ul {
+        display: none;
+    }
+
+
+
+    /* .ul-submenu {
+        padding-top: 20px;
+        display: flex;
+        flex-flow: column;
+        gap: 5px 0;
+        border: 1px solid var(--almost-black);
+        position: absolute;
+        z-index: 10;
+    } */
+
+    /*.ul-submenu li {
+        display: flex;
+        gap: 5px;
+    } */
+
+/* No he sapigut aplicar el javascript per fer funcionar els buttons, pero he fet servir flex per poder posicionar els elemtes del submenu */
+/* perque no me desquadri tot el header els li he aplicat una position: absolute i z-index */
+/* et deixo aquí el codi que haguès fet servir per col·locar tots els elements */
+
+
+
+    #arrow-up-1, #arrow-up-2 {
+        display: none;
+    }
+
+    #btn-features, #btn-company, .btn-login {
+        border: none;
+        background-color: var(--almost-white);
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 30px;
+    }
+
+    .btn-register {
+        border-width: 2px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: var(--almost-white);
+    }
+
+    main {
+        padding: 50px;
+        flex-direction: row;
+    }
+
+    main section {
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    section h2 {
+        font-size: 70px;
+        text-align: left;
+    }
+
+    section p {
+        text-align: left;
+    }
+
+    main picture {
+        order: 2;
+    }
+
+}
