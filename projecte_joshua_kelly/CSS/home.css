@@ -1,0 +1,188 @@
+:root {
+--red: #a62f20;
+--green: #002d04;
+--almost-white: #fafafa;
+--almost-black: #010101;
+--beige: #d3c7b1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'afacad';
+}
+
+@font-face {
+    font-family: "afacad";
+    src: url(../fonts/afacad.ttf);
+}
+
+/*  --  MAIN-SECTION  -- */
+
+section {
+    background-color: var(--almost-white);
+}
+
+#catchphrase {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--red);
+}
+
+/*  --  ARTICLES  -- */
+
+article {
+    text-align: center;
+    color: var(--almost-black);
+    padding: 30px;
+}
+
+article div {
+    color: var(--almost-black);
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.7)
+}
+
+article div:hover {
+    transform: scale(1.02);
+    border: 2px solid var(--red);
+    border-radius: 5px;
+}
+
+article div p {
+    padding-bottom: 8px;
+}
+
+img[alt="foto article"] {
+    width: 100%;
+}
+
+.buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.buttons ul li {
+    display: inline;
+    padding: 5px;
+}
+
+img[alt="top-page"] {
+    width: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    padding: 5px;
+    background-color: var(--red);
+    z-index: 10;
+}
+
+/*  --  ASIDE  -- */
+
+aside {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--almost-white);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+aside div {
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+aside h4, aside h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+aside h3 {
+    padding-bottom: 30px;
+}
+
+aside a {
+    color: var(--almost-white);
+}
+
+/*  -- TABLET --  */
+
+@media (min-width: 576px) {
+    
+    main {
+        position: relative;
+    }
+    
+    aside {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    section>div {
+        width: 60%;
+    }
+    
+    #catchphrase {
+        padding-top: 30px;
+        color: var(--red);
+    }
+
+    .first {
+        width: 60%;
+    }
+
+    .second {
+        width: 49%;
+        display: inline-block;
+    }
+
+}
+
+/*  -- DESKTOP --  */
+
+@media (min-width: 1024px) {
+
+    main {
+        position: relative;
+    }
+    
+    aside {
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    #catchphrase {
+        padding-top: 30px;
+        color: var(--red);
+    }
+
+    .first {
+        width: 60%;
+    }
+
+    .second {
+        width: 30%;
+        display: inline-block;
+    }
+
+    .buttons {
+        text-align: left;
+        position: relative;
+        left: 23.5%;
+    }
+
+}
